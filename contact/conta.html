@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="conta.css" />
+
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <!-- <link rel="stylesheet" href="landingpage.css" /> -->
+    <title>contact</title>
+  </head>
+  <body>
+    <div class="mainmainmain">
+      <nav>
+        <a href="">
+          <img src="./titu.png" class="iconnavbar" alt="" />
+        </a>
+        <ul>
+          <!-- <li><a href="shopshop.html" target="_blank">SHOPPING</a></li> -->
+          <!-- <li><a href="">NEW ARRIVALS</a></li> -->
+          <li><a href="index.html" target="_blank">HOME</a></li>
+          <li><a href="catogauries.html" target="_blank">ABOUT-US</a></li>
+          <li><a href="conta.html" target="_blank">Contact</a></li>
+        </ul>
+        <!-- <div class="search">
+          <i class="fa fa-search"></i>
+        </div> -->
+        <div class="menu">
+          `
+          <i class="fa fa-bars"></i>
+        </div>
+      </nav>
+      <div class="phone1">
+        <div id="bgphone" class="orignalscreen">
+          <div class="MobileTop">
+            <div class="battery"></div>
+            <div class="wifi"></div>
+            <div class="signal"></div>
+            <div class="notch">
+              <div class="empty"></div>
+              <div class="speaker"></div>
+              <div class="camera"></div>
+            </div>
+            <div class="signal">
+              <img src="./icons8-signal-24.png" alt="" class="bb" />
+            </div>
+            <div class="wifi">
+              <img src="./ios-wifi-2.svg" alt="" class="ee" />
+            </div>
+            <div class="battery">
+              <img src="./ttii.png" alt="" class="gg" />
+            </div>
+          </div>
+
+          <div class="MobileMiddle">
+            <div class="Time">
+              <h3 id="date-time"></h3>
+              <h4 id="date-123"></h4>
+              <h5 id="date-weekday"></h5>
+            </div>
+          </div>
+          <div class="mobileMiddle2">
+            <div class="notification">
+              <a
+                href="https://www.instagram.com/sheoutfit2005/"
+                target="_blank"
+              >
+                <div class="Card">
+                  <img src="./instagram.svg" alt="" />
+                  <div class="cardnotification">
+                    <h5>INSTAGRAM</h5>
+                    <span>Follow us on!</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- <a
+                href="https://www.instagram.com/sheoutfit2005/"
+                target="_blank"
+              >
+                <div class="Card">
+                  <img src="./img/icons/icons8-email-100.png" alt="" />
+                  <div class="cardnotification">
+                    <h5 class="ss">OUR-EMAIL</h5>
+                    <span class="ss">@sheoutfit.com</span>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/sheoutfit2005/"
+                target="_blank"
+              >
+                <div class="Card">
+                  <img src="./icons/linkedin.svg" alt="" />
+                  <div class="cardnotification">
+                    <h5>LINKEDIN</h5>
+                    <span>Follow us on!</span>
+                  </div>
+                </div>
+              </a> -->
+              <a href="http://wa.me/9478083004" target="_blank">
+                <div class="Card">
+                  <img src="./whatsapp.svg" alt="" />
+                  <div class="cardnotification">
+                    <h5>WHATSAPP</h5>
+                    <span>Message us on!</span>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+                target="_blank"
+              >
+                <div class="Card">
+                  <img src="./icons8-email-100.png" alt="" />
+                  <div class="cardnotification">
+                    <h5>e-mail</h5>
+                    <span>you can also send us a mail</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="mobilebottom">
+            <div class="mobilebuttons">
+              <button onclick="onClick()">
+                <img src="./icons8-compact-camera-50.png" alt="" />
+              </button>
+              <button onclick="press1()">
+                <img src="./icons8-torch-64.png" alt="" />
+              </button>
+            </div>
+            <div class="mobileslider"></div>
+          </div>
+        </div>
+        <div class="h1">
+          <h1 class="gg">HELLO I AM ASHOK KUMAR.</h1>
+          <h3 class="jj">
+            A proffesniol fashion designer with a experience of up to 12 years
+            .I had seen and dealed with a lot of clients in my courier but now
+            it's time to enroll on a new platform . let,s bang it.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script>
+      const ios = document.getElementById("date-time");
+      const date = document.getElementById("date-123");
+      const weekday = document.getElementById("date-weekday");
+
+      function showTime() {
+        let time = new Date();
+        ios.innerText = time.toLocaleTimeString("en-US", {
+          hour12: false,
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        date.innerText = time.toLocaleDateString("en-US");
+        weekday.innerText = time.toLocaleDateString("en-US", {
+          weekday: "long",
+        });
+        setTimeout(showTime, 1000);
+      }
+
+      showTime();
+
+      function onClick() {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        document.getElementById("body").style.backgroundColor =
+          "#" + randomColor;
+        document.getElementById("bgphone").style.backgroundImage =
+          "url(./opppp.jpg)";
+      }
+      function onClick1() {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        document.getElementById("body").style.backgroundColor =
+          "#" + randomColor;
+        document.getElementById("bgphone").style.backgroundImage =
+          "url(./ferrari.jpg)";
+      }
+
+      function press1() {
+        const h1id = document.getElementById("testing");
+        h1id.innerText = "Pressed";
+      }
+    </script>
+  </body>
+</html>
